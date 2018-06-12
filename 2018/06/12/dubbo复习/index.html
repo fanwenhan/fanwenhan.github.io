@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="后端,dubbo," />
 
 
 
@@ -86,16 +86,22 @@
 
 
 
-<meta name="description" content="hey girl! u r so beautiful~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mecera的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/06/index.html">
+<meta name="description" content="dubbo出现dubbo为何出现先说说的一个小插曲 ​    某公司前期项目使用的是垂直应用框架,即使用SpringMVC+spring+myBatis作为核心开发框架.后期网站的规模越来越大,单纯的几台服务器完全不能满足服务. 年轻的架构师经历了以下的心路历程:    当服务越来越多时，服务 URL 配置管理变得非常困难，F5 硬件负载均衡器的单点压力也越来越大。(架构师已经掉了半边头发~) ​">
+<meta name="keywords" content="后端,dubbo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dubbo回顾(一)">
+<meta property="og:url" content="http://yoursite.com/2018/06/12/dubbo复习/index.html">
 <meta property="og:site_name" content="Mecera的博客">
-<meta property="og:description" content="hey girl! u r so beautiful~">
+<meta property="og:description" content="dubbo出现dubbo为何出现先说说的一个小插曲 ​    某公司前期项目使用的是垂直应用框架,即使用SpringMVC+spring+myBatis作为核心开发框架.后期网站的规模越来越大,单纯的几台服务器完全不能满足服务. 年轻的架构师经历了以下的心路历程:    当服务越来越多时，服务 URL 配置管理变得非常困难，F5 硬件负载均衡器的单点压力也越来越大。(架构师已经掉了半边头发~) ​">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="h:/blog/source/_posts/dubbo复习/dubbo.jpg">
+<meta property="og:image" content="h:/blog/source/_posts/dubbo复习/dubbo-service-governance.jpg">
+<meta property="og:image" content="h:/blog/source/_posts/dubbo复习/dubbo-architecture.jpg">
+<meta property="og:updated_time" content="2018-06-12T09:42:44.395Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mecera的博客">
-<meta name="twitter:description" content="hey girl! u r so beautiful~">
+<meta name="twitter:title" content="Dubbo回顾(一)">
+<meta name="twitter:description" content="dubbo出现dubbo为何出现先说说的一个小插曲 ​    某公司前期项目使用的是垂直应用框架,即使用SpringMVC+spring+myBatis作为核心开发框架.后期网站的规模越来越大,单纯的几台服务器完全不能满足服务. 年轻的架构师经历了以下的心路历程:    当服务越来越多时，服务 URL 配置管理变得非常困难，F5 硬件负载均衡器的单点压力也越来越大。(架构师已经掉了半边头发~) ​">
+<meta name="twitter:image" content="h:/blog/source/_posts/dubbo复习/dubbo.jpg">
 
 
 
@@ -125,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/06/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/12/dubbo复习/"/>
 
 
 
 
 
-  <title>归档 | Mecera的博客</title>
+  <title>Dubbo回顾(一) | Mecera的博客</title>
   
 
 
@@ -160,7 +166,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -298,185 +304,235 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/12/dubbo复习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mecera">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mecera的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Dubbo回顾(一)</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-12T16:56:19+08:00">
+                2018-06-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
 
-      
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/doubbo/" itemprop="url" rel="index">
+                    <span itemprop="name">doubbo</span>
+                  </a>
+                </span>
 
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/12/dubbo复习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/06/12/dubbo复习/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2018/06/12/dubbo复习/" class="leancloud_visitors" data-flag-title="Dubbo回顾(一)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/06/12/dubbo复习/" itemprop="url">
-              
-                <span itemprop="name">Dubbo回顾(一)</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-12T16:56:19+08:00"
-              content="2018-06-12" >
-          06-12
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/06/11/怎么说/" itemprop="url">
-              
-                <span itemprop="name">怎么说</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-11T10:14:21+08:00"
-              content="2018-06-11" >
-          06-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/06/10/time/" itemprop="url">
-              
-                <span itemprop="name">time</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-10T20:06:14+08:00"
-              content="2018-06-10" >
-          06-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/06/10/你好,世界/" itemprop="url">
-              
-                <span itemprop="name">你好,世界</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-10T19:39:59+08:00"
-              content="2018-06-10" >
-          06-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h3 id="dubbo出现"><a href="#dubbo出现" class="headerlink" title="dubbo出现"></a>dubbo出现</h3><h3 id="dubbo为何出现"><a href="#dubbo为何出现" class="headerlink" title="dubbo为何出现"></a>dubbo为何出现</h3><p>先说说的一个小插曲</p>
+<p>​    某公司前期项目使用的是垂直应用框架,即使用SpringMVC+spring+myBatis作为核心开发框架.后期网站的规模越来越大,单纯的几台服务器完全不能满足服务.</p>
+<p>年轻的架构师经历了以下的心路历程:<br>    当服务越来越多时，服务 URL 配置管理变得非常困难，F5 硬件负载均衡器的单点压力也越来越大。(<em>架构师已经掉了半边头发~</em>)</p>
+<p>​    当进一步发展，服务间依赖关系变得错踪复杂，甚至分不清哪个应用要在哪个应用之前启动，技术老大都不能完整的描述应用的架构关系。(<em>架构师已经成了光头</em>)</p>
+<p>​    接着，服务的调用量越来越大，服务的容量问题就暴露出来，这个服务需要多少机器支撑？什么时候该加机器？(<em>架构师拒绝回答该问题,选择宕机</em>)</p>
+<p>介绍完这个小小的前提提要,让我们看看dubbo怎么做的</p>
+<hr>
+<p>先来自dubbo官方文档:</p>
+<p>[]: <a href="http://dubbo.apache.org/" target="_blank" rel="noopener">http://dubbo.apache.org/</a></p>
+<p>网站应用的规模不断扩大，常规的垂直应用架构已无法应对，分布式服务架构以及流动计算架构势在必行，亟需一个治理系统确保架构有条不紊的演进。</p>
+<p><img src="H:\blog\source\_posts\dubbo复习\dubbo.jpg" alt=""></p>
+<h4 id="单一应用架构"><a href="#单一应用架构" class="headerlink" title="单一应用架构"></a>单一应用架构</h4><p>一台服务器,一个ORM</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">当网站流量很小时，只需一个应用，将所有功能都部署在一起，以减少部署节点和成本。此时，用于简化增删改查工作量的数据访问框架(ORM)是关键。</span><br></pre></td></tr></table></figure>
+<h4 id="垂直应用架构"><a href="#垂直应用架构" class="headerlink" title="垂直应用架构"></a>垂直应用架构</h4><p>增加了几台服务器,变为了SpingMVC</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">当访问量逐渐增大，单一应用增加机器带来的加速度越来越小，将应用拆成互不相干的几个应用，以提升效率。此时，用于加速前端页面开发的<span class="type">Web</span>框架(<span class="type">MVC</span>)是关键。</span><br></pre></td></tr></table></figure>
+<h4 id="分布式服务架构"><a href="#分布式服务架构" class="headerlink" title="分布式服务架构"></a>分布式服务架构</h4><p>但是服务器不能无限增加啊(<em>要钱的说</em>),老板就让技术老大想办法.于是就有了<strong>核心业务</strong>提取,作为<strong>独立服务</strong>.于是服务器的增加暂停了,同样多的服务器干更多的活</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">当垂直应用越来越多，应用之间交互不可避免，将核心业务抽取出来，作为独立的服务，逐渐形成稳定的服务中心，使前端应用能更快速的响应多变的市场需求。此时，用于提高业务复用及整合的分布式服务框架(<span class="type">RPC</span>)是关键。</span><br></pre></td></tr></table></figure>
+<h4 id="流动计算架构"><a href="#流动计算架构" class="headerlink" title="流动计算架构"></a>流动计算架构</h4><p>这部分还没具体接触😂,后面再写…等待更新…</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">当服务越来越多，容量的评估，小服务资源的浪费等问题逐渐显现，此时需增加一个调度中心基于访问压力实时管理集群容量，提高集群利用率。此时，用于提高机器利用率的资源调度和治理中心(<span class="type">SOA</span>)是关键。</span><br></pre></td></tr></table></figure>
+<h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p><strong>连通性、健壮性、伸缩性、未来架构的升级。</strong></p>
+<p>再有就是看下图:直接将上面的最基本的问题解决</p>
+<p><img src="H:\blog\source\_posts\dubbo复习\dubbo-service-governance.jpg" alt=""></p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">将服务现在每天的调用量，响应时间，都统计出来，作为容量规划的参考指标。其次，要可以动态调整权重，在线上，将某台机器的权重一直加大，并在加大的过程中记录响应时间的变化，直到响应时间到达阀值，记录此时的访问量，再以此访问量乘以机器数反推总容量。</span><br></pre></td></tr></table></figure>
+<h3 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h3><p>不说其他的,先看图</p>
+<p><img src="H:\blog\source\_posts\dubbo复习\dubbo-architecture.jpg" alt=""></p>
+<p>说明解释</p>
+<ol>
+<li>服务容器负责启动，加载，运行服务提供者。</li>
+<li>服务提供者在启动时，向注册中心注册自己提供的服务。</li>
+<li>服务消费者在启动时，向注册中心订阅自己所需的服务。</li>
+<li>注册中心返回服务提供者地址列表给消费者，如果有变更，注册中心将基于长连接推送变更数据给消费者。</li>
+<li>服务消费者，从提供者地址列表中，基于软负载均衡算法，选一台提供者进行调用，如果调用失败，再选另一台调用。</li>
+<li>服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心。</li>
+</ol>
 
       
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/后端-dubbo/" <i class="fa fa-tag"></i> 后端,dubbo</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/11/怎么说/" rel="next" title="怎么说">
+                <i class="fa fa-chevron-left"></i> 怎么说
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -484,6 +540,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -504,8 +574,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -609,6 +688,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#dubbo出现"><span class="nav-number">1.</span> <span class="nav-text">dubbo出现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dubbo为何出现"><span class="nav-number">2.</span> <span class="nav-text">dubbo为何出现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#单一应用架构"><span class="nav-number">2.1.</span> <span class="nav-text">单一应用架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#垂直应用架构"><span class="nav-number">2.2.</span> <span class="nav-text">垂直应用架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分布式服务架构"><span class="nav-number">2.3.</span> <span class="nav-text">分布式服务架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#流动计算架构"><span class="nav-number">2.4.</span> <span class="nav-text">流动计算架构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优点"><span class="nav-number">3.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#架构"><span class="nav-number">4.</span> <span class="nav-text">架构</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -743,6 +838,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -760,6 +859,18 @@
       <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2018/06/12/dubbo复习/';
+          this.page.identifier = '2018/06/12/dubbo复习/';
+          this.page.title = 'Dubbo回顾(一)';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
